@@ -3,29 +3,22 @@
 Deplyment Link - https://ai-powered-rag-chatbot-doif8yx5anjemfudrydmk9.streamlit.app/
 
 ✨ Features
+-----------------
 Multi-doc ingestion: PDF (PyMuPDF) & DOCX (python-docx)
-
 Chunking & semantic search with FAISS (CPU)
-
 High-quality embeddings via sentence-transformers
-
 Local/Offline LLM support using transformers + torch
-
 Source-aware responses: shows which chunks were used
-
 Clean Streamlit UI with drag-and-drop upload
-
 Simple codebase: clear modules for parsing, indexing, retrieval, and generation
 
 🧱 Tech Stack
+----------------
+
 Frontend: Streamlit
-
 RAG Core: FAISS (vector index), sentence-transformers (embeddings)
-
 LLM: Hugging Face transformers + torch (CPU by default)
-
 Parsers: PyMuPDF (PDF), python-docx (DOCX)
-
 Packaging: requirements.txt for quick setup
 
 
@@ -43,6 +36,7 @@ Edit
 └── LICENSE
 
 ⚙️ Quickstart (Local)
+------------------------
 Python 3.9+ recommended
 
 bash
@@ -109,7 +103,9 @@ CHUNK_SIZE = 800
 CHUNK_OVERLAP = 120
 TOP_K = 5
 INDEX_DIR = "index_store/"
+
 🖱️ Usage
+-------------
 Launch the app.
 
 Upload one or more PDF/DOCX files.
@@ -127,8 +123,8 @@ Example prompts
 “What are the key risks and mitigations noted?”
 
 📦 Requirements
-From requirements.txt:
-
+----------------
+```
 nginx
 Copy
 Edit
@@ -140,37 +136,18 @@ sentence-transformers
 python-docx
 PyMuPDF
 packaging
-🛣️ Roadmap
- Add index persistence + background re-builds
+```
 
- Add OpenAI / local LLM switch via sidebar
-
- Optional chat history + session persistence
-
- Reranking (e.g., Cross-Encoder) for better retrieval quality
-
- Eval suite: context precision/recall & latency metrics
-
-🤝 Contributing
-PRs are welcome!
-
-Fork the repo
-
-Create a feature branch: feat/<short-name>
-
-Add tests or a short demo clip if UI-related
-
-Open a PR with a clear description
 
 📝 License
+----------------
 This project is released under the MIT License. See LICENSE.
 
 🙏 Acknowledgements
+---------------------
+
 FAISS for fast similarity search
-
 Sentence-Transformers for robust embeddings
-
 Streamlit for painless prototyping
-
 Hugging Face transformers for model loading
 
